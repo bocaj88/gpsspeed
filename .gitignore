@@ -1,0 +1,16 @@
+# OS / editors
+.DS_Store
+.vscode/
+.claude/
+
+# KiCad scratch and backups
+*-backups/
+fp-info-cache
+*.kicad_prl
+*.lck
+pcb/route/
+pcb/out/gpsspeed.step
+pcb/gen/__pycache__/
+
+# firmware build output
+build/

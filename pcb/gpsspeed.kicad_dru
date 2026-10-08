@@ -1,0 +1,12 @@
+(version 1)
+# JLC's own land pattern for the USB-C receptacle (C2765186) puts the plastic
+# locating pegs 0.18 mm from the outer GND pads. That is the manufacturer's
+# geometry and JLC builds it routinely; allow it for this footprint only.
+(rule "USB-C locating pegs"
+  (condition "A.memberOfFootprint('J3') && B.memberOfFootprint('J3')")
+  (constraint hole_clearance (min 0.15mm)))
+
+# Keep the 2 mm GPS RF feed clean: nothing else within 0.3 mm of it.
+(rule "GPS RF feed"
+  (condition "A.NetName == 'GPS_RF'")
+  (constraint clearance (min 0.25mm)))
