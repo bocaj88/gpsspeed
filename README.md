@@ -8,6 +8,9 @@ firmware, and the notes on what didn't work along the way.
 
 ## The problem
 
+**The paddlewheel speed sensor on our X2 went bad, and replacement sensors aren't sold anymore.**
+Without it, PerfectPass has no speed to hold, so the speed control on the boat was dead.
+
 PerfectPass holds a tow boat at a set speed by reading the boat's **paddlewheel speed sensor**: a
 small wheel under the hull that spins in the water and sends one pulse per fraction of a turn.
 On our X2 that sensor is part of an Airmar DST800-style triducer (speed, depth, temperature). It
@@ -17,7 +20,8 @@ Paddlewheels are the weak link:
 
 - **They foul.** Weed, a fishing line, or a little growth, and the wheel drags or stops. PerfectPass
   then sees the wrong speed (or none) and drives the throttle accordingly.
-- **They're getting hard to replace.** The DST800 is now an Airmar *legacy* product.
+- **You can't buy a replacement.** The DST800 is now an Airmar *legacy* product. Ours failed, and
+  there was nothing to swap in.
 - **They're never quite right.** Paddlewheel speed depends on the wheel, the hull, and how clean it
   is, so the dash and the real speed drift apart.
 

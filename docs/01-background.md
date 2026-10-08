@@ -30,6 +30,11 @@ PerfectPass applies its own calibration, and our first emulator's timing also sh
 (see [history](02-history-uno-builds.md)). So the firmware treats the constant as a setting:
 `Hz/MPH` defaults to 4.42, and the app's calibration table corrects it per boat.
 
+## Why we built this
+
+Our paddlewheel failed, and replacement DST800 sensors aren't sold anymore. Without a speed signal,
+PerfectPass doesn't work at all.
+
 ## The fix in one sentence
 
 Generate that same open-collector pulse train from GPS speed, on the same signal wire, and

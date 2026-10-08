@@ -4,8 +4,8 @@
 
 ---
 
-Our 2008 X2's PerfectPass depends on the paddlewheel, and the paddlewheel is the weak link: it
-fouls, it drifts, and the DST800 it's part of is now an Airmar legacy part. So we built a small
+The paddlewheel on our 2008 X2 went bad, and replacement sensors aren't sold anymore (the DST800
+it's part of is an Airmar legacy part). No paddlewheel means no PerfectPass. So we built a small
 board that reads **GPS speed** and sends PerfectPass the same pulse signal the paddlewheel would.
 It goes on the same wire, so nothing else on the boat changes.
 
